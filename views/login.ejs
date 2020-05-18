@@ -1,0 +1,12 @@
+<% include partials/header %>
+<h1>Sign in!</h1>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<form action="/login" method ="post">
+    <input type="text" name="username" placeholder ="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" value="Login">
+    
+    
+</form>
+<% include partials/footer %>

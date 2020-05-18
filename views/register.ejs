@@ -1,0 +1,15 @@
+<% include partials/header %>
+<h1>Sign UP!</h1>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<form action="/register" method ="post">
+    <input type="text" name="username" placeholder ="username">
+    <input type="text" name="email" placeholder ="email">
+    <input type="text" name="phonenumber" placeholder ="phonenumber">
+    <input type="text" name="enrollnumber" placeholder ="enrollnumber">
+    <input type="password" name="password" placeholder="password">
+    <a href="/dorms" class="btn-btn-success" >Submit</a>
+    
+    
+</form>
+<% include partials/footer %>

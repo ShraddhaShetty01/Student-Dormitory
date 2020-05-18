@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="container">
+        
+        <div class="container">
+        <div class="row">
+                <% dorms.forEach(function(dorm){%>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-thumbnail">
+                                <img src="<%= dorm.image%>" height="150" width="230"/>
+                            <div class="caption">
+                                <p><strong><%= dorm.name %></strong></p>
+                            </div>
+                            <p>
+                                <a href="/dorms/<%= dorm._id %>" class="btn btn-primary pull-center" > More Information</a> 
+                            </p>
+                        </div>
+                    </div>
+                <% });%>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>
